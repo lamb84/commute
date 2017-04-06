@@ -1,0 +1,62 @@
+{
+   "destination_addresses" : [ "San Francisco, CA, USA", "Victoria, BC, Canada" ],
+   "origin_addresses" : [
+      "1318 Homer St, Vancouver, BC V6B 6A7, Canada",
+      "418 Beachview Dr, North Vancouver, BC V7G 1P7, Canada"
+   ],
+   "rows" : [
+      {
+         "elements" : [
+            {
+               "distance" : {
+                  "text" : "1,528 km",
+                  "value" : 1527701
+               },
+               "duration" : {
+                  "text" : "15 hours 1 min",
+                  "value" : 54085
+               },
+               "status" : "OK"
+            },
+            {
+               "distance" : {
+                  "text" : "114 km",
+                  "value" : 113604
+               },
+               "duration" : {
+                  "text" : "3 hours 11 mins",
+                  "value" : 11441
+               },
+               "status" : "OK"
+            }
+         ]
+      },
+      {
+         "elements" : [
+            {
+               "distance" : {
+                  "text" : "1,535 km",
+                  "value" : 1534634
+               },
+               "duration" : {
+                  "text" : "15 hours 9 mins",
+                  "value" : 54513
+               },
+               "status" : "OK"
+            },
+            {
+               "distance" : {
+                  "text" : "127 km",
+                  "value" : 127445
+               },
+               "duration" : {
+                  "text" : "3 hours 25 mins",
+                  "value" : 12327
+               },
+               "status" : "OK"
+            }
+         ]
+      }
+   ],
+   "status" : "OK"
+}
