@@ -18,7 +18,7 @@ from datetime import datetime
 def time(home_addr, work_addr):
     gmaps = googlemaps.Client(key='AIzaSyBknqIxQcdcDMT-po3pNYat7dj0yH7fLeE')
     time = datetime.now()
-    commute_json = gmaps.distance_matrix(origins=home_addr, destinations=work_addr, departure_time=time)
+    commute_json = gmaps.distance_matrix(origins=home_addr, destinations=work_addr)
     commute_time = commute_json['rows'][0]['elements'][0]['duration']['text']
     return commute_time
 
@@ -26,12 +26,13 @@ def time(home_addr, work_addr):
 def distance(home_addr, work_addr):
     gmaps = googlemaps.Client(key='AIzaSyBknqIxQcdcDMT-po3pNYat7dj0yH7fLeE')
     time = datetime.now()
-    commute_json = gmaps.distance_matrix(origins=home_addr, destinations=work_addr, departure_time=time)
+    commute_json = gmaps.distance_matrix(origins=home_addr, destinations=work_addr)
     commute_distance = commute_json['rows'][0]['elements'][0]['distance']['text']
     return commute_distance
 
 if __name__ == '__main__':
-    home_addr = '418 Beachview dr. North Vancouver'
+#    home_addr = '418 Beachview dr. North Vancouver'
+    home_addr = '418 Beachview Dr, North Vancouver'
     work_addr = '138 East 7th, Vancouver'
     ct_time = time(home_addr,work_addr)
     print(ct_time)
